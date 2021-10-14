@@ -88,16 +88,44 @@ Headers:		'Montserrat', sans-serif;
   padding: 20px 0;
   position: relative;
 }
+
+
 .navigation .brand {
   z-index: 101;
   position: relative;
   display: inline-block;
   font-size: 24px;
   font-weight: bold;
+  background: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation.show-background, .navigation.show-background:hover {
+  background-color:rgba(250, 250, 250, 0.9) ;
+
+}
+
+.navigation.show-background .brand {
+  background: transparent;
+  height: auto;
+  width: auto;
+}
+
+.navigation.show-background a {
+  color: black!important;
+}
+
+.navigation.show-background .right .navigation-links li a:after {
+  background-color: black ;
 }
 
 .navigation .brand img{
-  max-width: 100px;
+  max-width: 80px;
 }
 .navigation .wrapper {
   display: table;
@@ -110,7 +138,7 @@ Headers:		'Montserrat', sans-serif;
 .navigation .right {
   display: table-cell;
   text-align: right;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
 }
 .navigation .right .navigation-links {
@@ -3636,4 +3664,34 @@ form .status i {
 /*===========Custom Css ===================*/
 .hidden--text {
   display: none;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+}
+.tabs a {
+  cursor: pointer;
+}
+.tabs a.active {
+  border-bottom: 2px solid ;
+}
+.tabs a:last-child {
+  margin-left: 20px;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 30px;
+}
+
+.tab-content1 {
+  display: block;
+}
+
+.tab-content__image {
+  text-align: center;
 }

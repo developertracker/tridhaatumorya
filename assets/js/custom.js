@@ -32,6 +32,16 @@ $(document).ready(function($) {
         $(this).click(function(){
             $(this).prev().slideToggle('fast');
         })
+    });
+
+    $('.tabs a').each(function(index){
+        var count = index + 1;
+        $(this).click(function(){
+            $('.tab-content').fadeOut();
+            $('.tab-content' + count).fadeIn();
+            $('.tabs a').removeClass('active');
+            $(this).addClass('active');
+        })
     })
 
 //  Smooth Scroll
