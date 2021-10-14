@@ -95,6 +95,10 @@ Headers:		'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
+
+.navigation .brand img{
+  max-width: 100px;
+}
 .navigation .wrapper {
   display: table;
   width: 100%;
@@ -2224,6 +2228,11 @@ hr {
   font-size: 24px;
   font-weight: bold;
 }
+
+#page-footer .brand {
+  max-width: 100px;
+}
+
 #page-footer .numbers {
   margin-top: 250px;
 }
