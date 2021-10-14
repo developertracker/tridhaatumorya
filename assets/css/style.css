@@ -3622,3 +3622,9 @@ form .status i {
     margin-left: 0;
   }
 }
+
+
+/*===========Custom Css ===================*/
+.hidden--text {
+  display: none;
+}

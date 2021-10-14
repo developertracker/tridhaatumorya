@@ -28,6 +28,12 @@ $(document).ready(function($) {
         });
     }
 
+    $('.a-link').each(function(){
+        $(this).click(function(){
+            $(this).prev().slideToggle('fast');
+        })
+    })
+
 //  Smooth Scroll
 
     $('.main-nav a[href^="#"], a[href^="#"].scroll').on('click',function (e) {
