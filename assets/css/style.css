@@ -24,6 +24,7 @@ Body copy:		'Montserrat', sans-serif; 13px;
 Headers:		'Montserrat', sans-serif;
 
 -------------------------------------------------------------------*/
+
 /* 1. Header */
 .navigation {
   -moz-transition: 0.5s ease;
@@ -97,8 +98,8 @@ Headers:		'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: bold;
   background: #ffffff;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -116,39 +117,47 @@ Headers:		'Montserrat', sans-serif;
   width: auto;
 }
 
-.navigation.show-background a {
-  color: black!important;
-}
 
-.navigation.show-background .right .navigation-links li a:after {
-  background-color: black ;
-}
+
 
 .navigation .brand img{
-  max-width: 80px;
+  max-width: 120px;
+  transition: all 0.5s;
 }
 .navigation .wrapper {
   display: table;
   width: 100%;
+  background: #f6f1d4;
 }
 .navigation .left {
-  display: table-cell;
-  vertical-align: middle;
+  display: block;
+  top: -30px;
+  position: fixed;
 }
+
+.navigation.show-background .left {
+  top: 8px;
+}
+
+.navigation.show-background .left .brand img{
+  max-width: 90px;
+}
+
 .navigation .right {
-  display: table-cell;
-  text-align: right;
-  vertical-align: top;
+  display: flex;
   position: relative;
+  align-items: center;
+  margin-left: auto;
 }
 .navigation .right .navigation-links {
   list-style: none;
   padding-left: 0;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
 }
 .navigation .right .navigation-links li {
   display: inline-block;
+  padding: 0 20px;
 }
 .navigation .right .navigation-links li.active a {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -158,8 +167,6 @@ Headers:		'Montserrat', sans-serif;
   width: 100%;
 }
 .navigation .right .navigation-links li a {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
   -moz-transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -176,7 +183,7 @@ Headers:		'Montserrat', sans-serif;
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #fff;
+  background-color: #2961ac;
 }
 .navigation .right .navigation-links li a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -314,7 +321,6 @@ Headers:		'Montserrat', sans-serif;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
   content: "";
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -356,15 +362,7 @@ Headers:		'Montserrat', sans-serif;
   font-size: 18px;
   vertical-align: middle;
 }
-.hero-section .wrapper {
-  display: table;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
+
 .hero-section .wrapper .hero-title {
   display: table-cell;
   vertical-align: middle;
@@ -494,6 +492,7 @@ body {
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
   position: relative;
+  background: #f6f1d4;
 }
 body.has-loading-screen .pace {
   visibility: visible;
@@ -722,10 +721,10 @@ ul.check-marks li:before {
   color: #fff;
 }
 .background-is-dark a {
-  color: #fff;
+  color: #2961ac;
 }
 .background-is-dark a:hover, .background-is-dark a:active, .background-is-dark a:focus {
-  color: #fff;
+  color: #2961ac;
 }
 .background-is-dark a.btn-default {
   color: #000;
@@ -3675,6 +3674,8 @@ form .status i {
 }
 .tabs a {
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .tabs a.active {
   border-bottom: 2px solid ;
@@ -3688,10 +3689,173 @@ form .status i {
   margin-top: 30px;
 }
 
+.tab-content h2 {
+  text-transform: uppercase;
+}
+
 .tab-content1 {
   display: block;
 }
 
 .tab-content__image {
   text-align: center;
+}
+
+#page-header {
+  padding: 70px 40px 40px 40px;
+  background: #f6f1d4;
+  opacity: 0;
+}
+
+
+
+.pace-done #page-header {
+  opacity: 1;
+}
+
+#about {
+  background: #f6f1d4;
+}
+
+.navigation .wrapper {
+  padding: 0 40px 0 36px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.social-icons {
+  margin-left: 20px;
+}
+.social-icons a {
+  padding: 0 5px;
+}
+
+.hero-section .owl-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 11111;
+}
+
+.hero-section .owl-dots .owl-dot span {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+}
+
+.hero-section .owl-dots .owl-dot{
+  position: relative;
+  margin: 0 5px;
+  opacity: 1;
+}
+
+.hero-section .owl-dots .owl-dot:after {
+  content: "";
+  position: absolute;
+  background: #666666;
+  width: 20px;
+  height: 2px;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+}
+
+.hero-section .owl-dots .owl-dot.active:after, .hero-section .owl-dots .owl-dot:last-child:after {
+  display: none;
+}
+
+.hero-section .owl-dots .owl-dot.active span {
+  background: #ffffff;
+  color: #666666;
+  border-color:#ffffff;
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+@media (max-width: 767px) {
+  #page-header {
+    padding: 58px 0 0 0;
+  }
+
+  .navigation .wrapper {
+    padding: 20px 20px;
+  }
+
+  .navigation .brand {
+    width: auto;
+    height: auto;
+  }
+
+  .navigation .brand img, .navigation.show-background .left .brand img{
+    max-width: 70px;
+  }
+
+  .social-icons {
+    margin-right: 20px;
+  }
+
+  .navigation .nav-btn figure {
+    background-color: #2961ac;
+  }
+
+  .navigation .nav-btn:after {
+    color: #2961ac;
+  }
+
+  .navigation .right .navigation-links li {
+    padding: 10px 20px;
+  }
+
+  .navigation .right .navigation-links li a {
+    font-size: 16px;
+  } 
+
+  .navigation .brand {
+    background: transparent;
+
+  }
+
+  .navigation .left {
+    top: 8px;
+  }
+
+  .navigation .right .navigation-links {
+    margin-top: 40px!important;
+    right: 0;
+  }
+
+  .background-is-dark a {
+    color: white;
+  }
+
+  .navigation .right .navigation-links li.active a, .social-icons a{
+    color: #2961ac;
+  }
+
+  .block {
+    padding: 60px 0 0 0;
+  }
+
+  .testimonials p {
+    font-size: 16px;
+  }
+
+  .hero-title h1 {
+    font-size: 26px;
+  }
+
 }
