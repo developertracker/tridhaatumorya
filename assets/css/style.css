@@ -157,7 +157,7 @@ Headers:		'Montserrat', sans-serif;
 }
 .navigation .right .navigation-links li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 .navigation .right .navigation-links li.active a {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -712,7 +712,7 @@ ul.check-marks li:before {
 
 /* 3. Universal classes */
 .block {
-  padding: 70px 0;
+  padding: 70px 0 0 0;
   overflow: hidden;
   position: relative;
 }
@@ -3669,6 +3669,10 @@ form .status i {
   margin-bottom: 20px;
 }
 
+.block h2, .block h3 {
+  color: #2961ac;
+}
+
 .tabs {
   display: flex;
 }
@@ -3785,10 +3789,95 @@ form .status i {
   height: 100%;
 }
 
+.lead-form {
+  position: fixed;
+  top:50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 3;
+  background: rgba(246, 241, 212, 0.6);
+  padding: 20px;
+  box-shadow: 0 0 10px 10px rgb(0 0 0 / 8%);
+}
+
+.lead-form .form-control {
+  background: transparent;
+  border: 1px solid;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.lead-form .form-action button {
+  background: rgba(246, 241, 212, 1);
+  color: #2961ac;
+  border: 0;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 8%);
+  padding: 5px 10px;
+}
+
+.close-btn {
+  color: #2961ac;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#whymorya .owl-nav-wrapper #big-gallery-nav {
+  top: -25px;
+}
+
+#whymorya .owl-controls {
+  text-align: center;
+}
+
+#whymorya .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+}
+
+#amenities h4, #construction h4 {
+  color: #2961ac;
+}
+
+
+@media (max-width: 1680px) {
+  .hero-title h1 {
+    font-size: 50px;
+  }
+
+  .hero-title .container {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .navigation .right .navigation-links li {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) { 
+  .navigation .right .navigation-links li a{
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+  .navigation .brand {
+    width: 100px;
+    height: 100px;
+  }
+  .navigation .brand img {
+    max-width: 90px;
+  }
+
+  .navigation .left {
+    top: -5px;
+  }
+}
 
 @media (max-width: 767px) {
   #page-header {
-    padding: 58px 0 0 0;
+    padding: 58px 0 0 0                                           ;
   }
 
   .navigation .wrapper {
@@ -3817,7 +3906,7 @@ form .status i {
   }
 
   .navigation .right .navigation-links li {
-    padding: 10px 20px;
+    padding: 10px 0;
   }
 
   .navigation .right .navigation-links li a {

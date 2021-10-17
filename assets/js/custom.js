@@ -34,17 +34,31 @@ $(document).ready(function($) {
         })
     });
 
-    $('.tabs a').each(function(index){
+    $('.about-tabs a').each(function(index){
         var count = index + 1;
         $(this).click(function(){
+            console.log(count); 
             $('.tab-content').fadeOut();
             $('.tab-content' + count).fadeIn();
-            $('.tabs a').removeClass('active');
+            $('.about-tabs a').removeClass('active');
             $(this).addClass('active');
         })
     })
 
+    $('.plan-tabs a').each(function(index){
+        var count = index + 1;
+        $(this).click(function(){
+            console.log(count); 
+            $('.tab-content').fadeOut();
+            $('.tab-content' + count).fadeIn();
+            $('.plan-tabs a').removeClass('active');
+            $(this).addClass('active');
+        })
+    })
 
+    $('.close-btn').click(function(){
+        $('.lead-form').fadeOut('fast');
+    })
 
 //  Smooth Scroll
 
