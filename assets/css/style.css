@@ -3869,6 +3869,17 @@ form .status i {
   align-items: center;
 }
 
+#construction .row .stage .icon {
+  background: #ffffff;
+}
+
+#construction .row .stage .icon img {
+  width: 35px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 13px;
+}
+
 #construction .stage .description h2{
   line-height: normal;
 }
@@ -3987,5 +3998,11 @@ form .status i {
   }
   .hero-title .container{
     margin: 0 auto 15% auto;
+  }
+  #construction .row {
+    flex-direction: column;
+  }
+  #construction .stage .description {
+    padding-top: 5px;
   }
 }
