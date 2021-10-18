@@ -3850,6 +3850,32 @@ form .status i {
   color: #2961ac;
 }
 
+#plans .bg-transfer {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#plans .gallery .gallery-item {
+  height: 150px;
+}
+
+#construction .row {
+  display: flex;
+  align-items: center;
+}
+
+#construction .row .stage{
+  display: flex;
+  align-items: center;
+}
+
+#construction .stage .description h2{
+  line-height: normal;
+}
+
+#construction .stage .description h3 {
+  opacity: 1;
+}
 
 @media (max-width: 1680px) {
   .hero-title h1 {
