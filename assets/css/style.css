@@ -3785,8 +3785,17 @@ form .status i {
 
 .hero-title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
+}
+
+.hero-title h1 {
+  font-size: 50px;
+}
+
+.hero-title .container {
+  margin: 6% 0 0 5%;
+  width: 870px;
 }
 
 .lead-form {
@@ -3844,11 +3853,11 @@ form .status i {
 
 @media (max-width: 1680px) {
   .hero-title h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .hero-title .container {
-    max-width: 768px;
+    max-width: 600px;
     width: 100%;
   }
 
@@ -3944,7 +3953,13 @@ form .status i {
   }
 
   .hero-title h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
+  .hero-title {
+    align-items: flex-end;
+  }
+  .hero-title .container{
+    margin: 0 auto 15% auto;
+  }
 }
