@@ -127,7 +127,7 @@ Headers:		'Montserrat', sans-serif;
 .navigation .wrapper {
   display: table;
   width: 100%;
-  background: #f6f1d4;
+  background: #ffffff;
 }
 .navigation .left {
   display: block;
@@ -494,6 +494,7 @@ body {
   position: relative;
   background: #f6f1d4;
 }
+
 body.has-loading-screen .pace {
   visibility: visible;
 }
@@ -712,7 +713,7 @@ ul.check-marks li:before {
 
 /* 3. Universal classes */
 .block {
-  padding: 70px 0 0 0;
+  padding: 70px 0 50px 0;
   overflow: hidden;
   position: relative;
 }
@@ -3707,8 +3708,17 @@ form .status i {
 
 #page-header {
   padding: 70px 40px 40px 40px;
-  background: #f6f1d4;
   opacity: 0;
+}
+
+#page-header, #whymorya, #construction, #testimonials,  #contact {
+  background: #ffffff;
+}
+
+
+
+#testimonials .background-is-dark {
+  background: #000000;
 }
 
 
@@ -3717,9 +3727,6 @@ form .status i {
   opacity: 1;
 }
 
-#about {
-  background: #f6f1d4;
-}
 
 .navigation .wrapper {
   padding: 0 40px 0 36px ;
@@ -3833,12 +3840,19 @@ form .status i {
   cursor: pointer;
 }
 
+
+
 #whymorya .owl-nav-wrapper #big-gallery-nav {
   top: -25px;
 }
 
 #whymorya .owl-controls {
   text-align: center;
+}
+
+
+#whymorya .owl-dots {
+  margin-top: 20px;
 }
 
 #whymorya .owl-dots .owl-dot span {
@@ -3982,7 +3996,7 @@ form .status i {
   }
 
   .block {
-    padding: 60px 0 0 0;
+    padding: 60px 0 40px 0;
   }
 
   .testimonials p {
