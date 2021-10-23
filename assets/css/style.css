@@ -489,8 +489,8 @@ Headers:		'Montserrat', sans-serif;
 /* 2. Elements Styling */
 body {
   color: #1f1f1f;
-  font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
   position: relative;
   background: #f6f1d4;
 }
@@ -663,7 +663,7 @@ h3 {
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 h1.framed, h2.framed, h3.framed, h4.framed, h5.framed, h6.framed, a.framed {
@@ -683,7 +683,7 @@ html, body {
 p, address {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 ul {
@@ -713,7 +713,7 @@ ul.check-marks li:before {
 
 /* 3. Universal classes */
 .block {
-  padding: 70px 0 50px 0;
+  padding: 70px 0;
   overflow: hidden;
   position: relative;
 }
@@ -3118,7 +3118,7 @@ form .status i {
 /* 6. Responsive */
 @media (min-width: 992px) and (max-width: 1199px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   h1 {
@@ -3201,7 +3201,7 @@ form .status i {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   blockquote {
@@ -3230,7 +3230,7 @@ form .status i {
   }
 
   p {
-    line-height: 16px;
+    line-height: 20px;
   }
 
   .block {
@@ -3331,7 +3331,7 @@ form .status i {
 }
 @media (max-width: 767px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   blockquote {
@@ -3361,7 +3361,7 @@ form .status i {
   }
 
   p {
-    line-height: 18px;
+    line-height: 20px;
   }
 
   ul {
@@ -3862,6 +3862,7 @@ form .status i {
 
 #amenities h4, #construction h4 {
   color: #2961ac;
+  font-size: 16px;
 }
 
 #plans .bg-transfer {
@@ -3900,6 +3901,10 @@ form .status i {
 
 #construction .stage .description h3 {
   opacity: 1;
+}
+
+.blog-item .image h3 {
+  line-height: 20px;
 }
 
 @media (max-width: 1680px) {
@@ -3996,11 +4001,11 @@ form .status i {
   }
 
   .block {
-    padding: 60px 0 40px 0;
+    padding: 60px 0;
   }
 
   .testimonials p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .hero-title h1 {
@@ -4018,5 +4023,33 @@ form .status i {
   }
   #construction .stage .description {
     padding-top: 5px;
+  }
+
+  .lead-form {
+    width: 280px;
+  }
+
+.detail:last-child {
+    margin-bottom: 0;
+  }
+
+  #amenities .detail.left-align .gallery {
+    margin-bottom: 0;
+  }
+
+  #plans .gallery .col-md-3:last-child .gallery-item {
+    margin-bottom: 0;
+  }
+
+  #news .col-md-4:last-child .blog-item {
+    margin-bottom: 0;
+  }
+
+  #form-contact .form-group {
+    margin-bottom: 0;
+  }
+  
+  #about h2 br{
+    display: none;
   }
 }
